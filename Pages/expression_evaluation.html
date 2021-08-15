@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI For School</title>
+    <link rel="stylesheet" href="../CSS/quizstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    />
+    <script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script>
+    <script src="../scripts/output.js"></script>
+    <script src="../scripts/expression_evaluation.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="heading">Logic Warm Up</h2>
+    </div>
+    <div class="parent">
+      <div class="div1">
+        <h4>Concept Quizzes</h4>
+        <div class="step completed">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Logic Puzzle Basic Warm Up</div>
+        </div>
+
+        <!-- active -->
+        <div class="step active">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Logic Puzzle Intermediate Warm Up</div>
+        </div>
+        <div class="step active">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Operator Warm Up</div>
+        </div>
+
+        <div class="step active">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Logic Puzzle Advanced</div>
+        </div>
+        <!-- regular -->
+        <div class="step">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Truth Tellers and liars Warm Up</div>
+        </div>
+      </div>
+      <div class="div2">
+        <h4>Challenge Quizzes</h4>
+        <div class="step completed">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Logic Puzzle Basic Warm Up</div>
+        </div>
+
+        <!-- active -->
+        <div class="step active">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Logic Puzzle Intermediate Warm Up</div>
+        </div>
+        <div class="step active">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Operator Warm Up</div>
+        </div>
+
+        <div class="step active">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Logic Puzzle Advanced</div>
+        </div>
+        <!-- regular -->
+        <div class="step">
+          <div class="v-stepper">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="content">Truth Tellers and liars Warm Up</div>
+        </div>
+      </div>
+      <div class="div3">
+        <div class="parent-grid">
+          <div class="parent-grid4">
+            <h2>Logic Puzzles- Baisc Warm Up</h2>
+          </div>
+          <div class="parent-grid6">
+            <button type="button" class="btn btn-light">1</button>
+            <button type="button" class="btn btn-light">2</button>
+            <button type="button" class="btn btn-light">3</button>
+            <button type="button" class="btn btn-light">4</button>
+            <button type="button" class="btn btn-light">5</button>
+          </div>
+          <div class="parent-grid1">
+            <p id="question_area">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Eligendi, corrupti aspernatur earum sequi fugit omnis deserunt
+              commodi quibusdam laboriosam illo dolorem dolor quam alias
+              voluptatibus expedita ipsum excepturi delectus iste! Modi deserunt
+              facilis perferendis dolorum architecto excepturi est officia omnis
+            </p>
+          </div>
+          
+          <div class="parent-grid2">
+            <!-- <div class="input-group mb-3"> -->
+            <input type="text" class="form" id="student_answer"/>
+            <!-- </div> -->
+            <button type="button" class="btn btn-success" id="btn_check">Check</button>
+            <button type="button" class="btn big-btn btn-primary" id="btn_visualize">
+              Get Visulization of evaluations
+            </button>
+          </div>
+          <div class="parent-grid3">
+            <div id="cy" style="width: 500px;height: 500px;display: block;"></div>
+          </div>
+
+          <div class="parent-grid5">
+            <button type="button" class="btn btn-primary">Previous</button>
+          </div>
+
+          <div class="parent-grid7">
+            <button type="button" class="btn btn-primary">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
