@@ -27,7 +27,7 @@ Module.onRuntimeInitialized = _ => {
     document.getElementById("crossword_area").innerHTML = "";
     cross_gen = new Module.CrosswordGenerator();
     //take input from user
-    cross_gen.grid_size =9;
+    cross_gen.grid_size = 9;
     grid_size = cross_gen.grid_size;
     //generate grid
     cross_gen.do_all_tasks();
@@ -35,7 +35,28 @@ Module.onRuntimeInitialized = _ => {
     CSPify = new Module.CSPify();
     CSPify.do_all_tasks();
 
+    var num = document.createElement("span");
+    num.style.display = "inline-block";
+    num.style.width = "20px";
+    document.getElementById("crossword_area").append(num);
+
     for (var i = 1; i <= grid_size; i++) {
+        var num = document.createElement("span");
+        num.style.display = "inline-block";
+        num.style.width = "30px";
+        num.innerHTML = i;
+        // if(i==grid_size)
+        // num.innerHTML+="<br/>";
+        document.getElementById("crossword_area").append(num);
+    }
+
+    document.getElementById("crossword_area").innerHTML += "<br/>";
+
+    for (var i = 1; i <= grid_size; i++) {
+        var num = document.createElement("span");
+        num.innerHTML = i;
+        document.getElementById("crossword_area").append(num);
+
         for (var j = 1; j <= grid_size; j++) {
             if (grid.get(i).get(j) != 35)
                 addBox('.');
