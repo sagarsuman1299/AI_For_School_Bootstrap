@@ -67,7 +67,7 @@ Module.onRuntimeInitialized = _ => {
       cy.getElementById(node).style("background-color", "blue")
       ptr++;
       if (ptr == num_nodes)
-         document.getElementById("btn_visualize").disabled=true;
+         document.getElementById("btn_visualize").disabled = true;
    }
    function build_graph(num_vars, num_nodes, content, adj) {
 
